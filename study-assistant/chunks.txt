@@ -1,0 +1,38 @@
+Database indexes
+A database index is a data structure that helps a database find records faster without scanning every row in a table. Indexes are often created on columns that are frequently used in search conditions or sorting operations. Although indexes improve read performance, they require additional storage and can slow down insert, update, and delete operations because the index must also be maintained.
+
+
+SQL queries
+SQL (Structured Query Language) is used to retrieve and manipulate data in relational databases. A SELECT query retrieves data from one or more tables, while clauses such as WHERE filter rows and ORDER BY sorts the results. For example, SELECT name FROM users WHERE age > 18; retrieves the names of users whose age is greater than 18.
+
+
+Primary keys
+A primary key is a column or combination of columns that uniquely identifies each record in a database table. Primary key values must be unique and cannot be NULL, ensuring that each row can be identified reliably. For example, a user_id column can serve as the primary key of a users table because every user has a distinct identifier.
+
+
+Foreign keys
+A foreign key is a column or group of columns that references a primary key or another eligible unique key in a database table. Foreign keys establish relationships between tables and help maintain referential integrity by preventing references to nonexistent records, subject to the database's constraints and configuration. For example, an orders table may contain a customer_id foreign key that references the id column in a customers table.
+
+
+Binary search
+Binary search is an algorithm that efficiently finds a target value in sorted data by repeatedly dividing the search range in half. At each step, it compares the target with the middle element and continues searching only the relevant half. Binary search takes O(logn) time in the typical array implementation, making it much faster than a linear search for large sorted datasets.
+
+
+Linear search
+Linear search is an algorithm that finds an item by checking elements one at a time until the target is found or the collection ends. It works with both sorted and unsorted data and does not require preprocessing or a particular data structure. Its worst-case time complexity is O(n), because it may need to examine every element in a collection of n items.
+
+
+Stack data structure
+A stack is a linear data structure that follows the Last In, First Out (LIFO) principle, meaning the most recently added item is removed first. The push operation adds an item to the top of the stack, while the pop operation removes the top item. Stacks are commonly used in function call management, undo functionality, and expression evaluation.
+
+
+Queue data structure
+A queue is a linear data structure that follows the First In, First Out (FIFO) principle, meaning the earliest added item is removed first. The enqueue operation adds an item to the rear of the queue, while the dequeue operation removes an item from the front. Queues are commonly used in task scheduling, print job management, and request processing systems.
+
+
+Hash collisions
+A hash collision occurs when two different keys produce the same hash value or map to the same hash table index. Collisions are unavoidable in many hash table designs because the possible keys outnumber the available storage positions. Common collision-handling techniques include separate chaining, which stores multiple entries in a bucket, and open addressing, which searches for another available slot.
+
+
+Hash functions
+A hash function transforms input data, such as a string or key, into a hash value, typically a fixed-size number. In a hash table, the hash value helps determine where a key-value pair should be stored or located, enabling efficient average-case insertion, lookup, and deletion. A good hash function distributes keys evenly across the available space and produces consistent results for the same input under the same conditions.
