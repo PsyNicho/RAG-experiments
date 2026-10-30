@@ -222,4 +222,5 @@ __marimo__/
 #practice and tests
 scratch/
 
+#VS code configuration
 .vscode
