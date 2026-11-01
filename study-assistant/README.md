@@ -25,6 +25,8 @@ A RAG-based study assistant that answers questions from study materials using re
 - `test_vector_index.py`: tests for the index
 - `test_retrieval.py`: retrieval experiments on a small chunk set (embeds sample chunks, runs test questions, prints top-3 results with scores)
 - `docs/retrieval-notes.md`: retrieval experiments and findings
+- `prompt_build.py`: builds prompts using retrieved context and custom instructions
+- `rag_pipeline.py`: connects embeddings, vector search, study materials, and Gemini
 
 ## Progress
 
