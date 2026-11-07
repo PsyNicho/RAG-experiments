@@ -37,7 +37,7 @@ prompt = build_prompt(question, retrieved_chunks)
 
 try:
     response = client.models.generate_content(
-        model="YOUR_MODEL_NAME",
+        model="gemini-3.6-flash",
         contents=prompt
     )
 
