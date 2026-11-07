@@ -35,7 +35,7 @@ A RAG-based study assistant that answers questions from study materials using re
 - [X] Custom vector index with brute-force cosine search and tests
 - [X] Retrieval evaluation on sample study chunks
 - [X] LLM selected (Gemini API)
-- [ ] Generation: RAG prompt and LLM call
+- [X] Generation: RAG prompt and LLM call
 - [ ] End-to-end question answering
 - [ ] Document ingestion and chunking from real study material
 - [ ] Faster search (approximate index) and benchmark against FAISS

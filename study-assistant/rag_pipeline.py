@@ -35,10 +35,17 @@ retrieved_chunks = [text for text, score in results]
 
 prompt = build_prompt(question, retrieved_chunks)
 
-response = client.models.generate_content(
-    model="gemini-3.6-flash",
-    contents=prompt
-)
+try:
+    response = client.models.generate_content(
+        model="YOUR_MODEL_NAME",
+        contents=prompt
+    )
+
+    print("\nAnswer:")
+    print(response.text)
+
+except Exception as e:
+    print("An error occurred:", e)
 
 print("\nAnswer:")
 print(response.text)
