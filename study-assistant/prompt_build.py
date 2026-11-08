@@ -5,6 +5,8 @@ def build_prompt(question, chunks):
         For any part that cannot be answered from the context, say
         "Not enough context to answer this part."
         Do not invent facts or use outside knowledge.
+        Include all important details from the relevant context that help answer the question.
+        Do not omit key points just to make the answer shorter.
     """
 
     context = ""
