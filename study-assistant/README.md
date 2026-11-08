@@ -12,6 +12,10 @@ A RAG-based study assistant that answers questions from study materials using re
    and they are placed in a prompt for the LLM.
 4. The LLM answers only from that context, or says it doesn't know.
 
+## Why RAG:
+
+RAG's strength lies in the retrieval from the context. As opposed to LLMs which doesn't contain your notes, with RAG, you can have control over the source of information. Information that is most relevant to you such as notes from your teachers are used in RAG. It reduces made-up answers since you can instruct it to answer only from the context. Also, with RAG, you can check exactly where the answers to your problem came from.
+
 ## Setup
 
 1. Clone the repo and open the `study-assistant` folder.
@@ -27,19 +31,6 @@ A RAG-based study assistant that answers questions from study materials using re
 - `docs/retrieval-notes.md`: retrieval experiments and findings
 - `prompt_build.py`: builds prompts using retrieved context and custom instructions
 - `rag_pipeline.py`: connects embeddings, vector search, study materials, and Gemini
-
-## Progress
-
-- [X] Project setup (virtual environment, dependencies, tests)
-- [X] Embeddings with all-MiniLM-L6-v2
-- [X] Custom vector index with brute-force cosine search and tests
-- [X] Retrieval evaluation on sample study chunks
-- [X] LLM selected (Gemini API)
-- [X] Generation: RAG prompt and LLM call
-- [X] End-to-end question answering
-- [ ] Document ingestion and chunking from real study material
-- [ ] Faster search (approximate index) and benchmark against FAISS
-- [ ] Limitations Testing
 
 ## LLM choice: Google Gemini API (free tier)
 
@@ -61,3 +52,16 @@ A RAG-based study assistant that answers questions from study materials using re
 - Data handling depends on Google's applicable policies, so  avoid sensitive information.
 
 **Configuration:** The API key is stored in `.env`, which is excluded from Git. `.env.example` documents the required environmental veriable without exposing it.
+
+## Progress
+
+- [X] Project setup (virtual environment, dependencies, tests)
+- [X] Embeddings with all-MiniLM-L6-v2
+- [X] Custom vector index with brute-force cosine search and tests
+- [X] Retrieval evaluation on sample study chunks
+- [X] LLM selected (Gemini API)
+- [X] Generation: RAG prompt and LLM call
+- [X] End-to-end question answering
+- [ ] Document ingestion and chunking from real study material
+- [ ] Faster search (approximate index) and benchmark against FAISS
+- [ ] Limitations Testing
