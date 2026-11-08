@@ -22,6 +22,6 @@
 
 With this test, we can conclude that RAG pipeline can retrieve relevant answers and generate answers using Gemini. System handled different types of questions and phrasing and didnt give instructions when the information was insufficient.
 
-However inconsistency was seen as some information was ommited even when the information was present. This indicates completeness and consistency are areas that can be improved.
+However inconsistency was seen as some information was omitted even when the information was present. This indicates completeness and consistency are areas that can be improved.
 
 Overall, pipeline successfully showed the core RAG workflow, while improvements are needed to make it consistent.
